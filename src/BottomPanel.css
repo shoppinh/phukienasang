@@ -1,0 +1,31 @@
+.bottomPanel {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .bottomPanel {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 3.5rem;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid black;
+  }
+  .bottomPanel__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2px;
+    font-size: 1.1rem;
+  }
+
+  .bottomPanel__icons {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
