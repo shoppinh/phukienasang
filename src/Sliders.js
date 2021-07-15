@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
-import "./Slider.css";
+import "./Sliders.css";
 const breakPoints = [
   { width: 500, itemsToShow: 2 },
   { width: 768, itemsToShow: 3 },

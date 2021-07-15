@@ -1,0 +1,39 @@
+.MobileCartForm {
+  position: absolute;
+  bottom: -156px;
+  left: 0;
+}
+.MobileCartForm__TextArea {
+  background-color: rgb(236, 233, 233);
+}
+.MobileCartForm__TextArea input {
+  margin: 3px 0;
+  width: 95%;
+  border-radius: 5px;
+  border: 1px solid rgb(173, 169, 169);
+  outline: none;
+  line-height: 1.3rem;
+}
+
+.MobileCartForm__Checkout,
+.MobileCartForm__Action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 10px;
+}
+.MobileCartForm__BackButton,
+.MobileCartForm__AcceptButton {
+  width: 170px;
+}
+.MobileCartForm__BackButton {
+  color: grey;
+  background-color: orange;
+}
+.MobileCartForm__AcceptButton {
+  color: white;
+  background-color: red;
+}
+.MobileCartForm__Total {
+  flex: 1;
+}

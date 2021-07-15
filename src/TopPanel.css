@@ -1,14 +1,35 @@
 .TopPanel {
   display: none;
 }
+.TopPanel__items {
+  position: relative;
+}
 @media only screen and (max-width: 600px) {
   .TopPanel {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 2.5rem;
-    background-color: red;
+    background-color: rgb(211, 217, 227);
+    padding: 0 5px;
+    border-bottom: 1px solid #333;
+    z-index: 2;
+  }
+  .TopPanel__search {
+    margin-right: 5px;
+    border-radius: 25px;
+    border-style: none;
+    height: 23px;
+    padding-left: 1.6rem;
+    width: 80%;
+  }
+  .TopPanel__search--icon {
+    position: absolute;
+    top: 0;
+    left: 5px;
   }
 }

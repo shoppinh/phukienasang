@@ -1,4 +1,5 @@
 import React from "react";
+import SearchIcon from "@material-ui/icons/Search";
 import "./TopPanel.css";
 const TopPanel = () => {
   return (
@@ -8,7 +9,12 @@ const TopPanel = () => {
         <span>Phukieasang.com</span>
       </div>
       <div className="TopPanel__items">
-        <input type="text" />
+        <input
+          type="text"
+          className="TopPanel__search"
+          placeholder="Tìm kiếm sản phẩm"
+        />
+        <SearchIcon className="TopPanel__search--icon"></SearchIcon>
       </div>
     </div>
   );
