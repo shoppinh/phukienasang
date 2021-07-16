@@ -1,0 +1,28 @@
+.CategoryGridItem {
+  margin-top: 5px;
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h5 {
+  margin: 0;
+}
+.CategoryGridItem__Title {
+  text-align: start;
+}
+
+.CategoryGridItem__PriceAndShipping,
+.CategoryGridItem__Control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.CategoryGridItem__Image {
+  padding-left: 5px;
+}
+.CategoryGridItem__Title,
+.CategoryGridItem__PriceAndShipping,
+.CategoryGridItem__Control {
+  margin-left: 5px;
+}

@@ -20,18 +20,18 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
   },
 }));
-const CategoryFilter = () => {
+const CategoryFilter = ({ handleToggle }) => {
   const classes = useStyles();
-  const [age, setAge] = React.useState("");
+  const [sortBy, setSortBy] = React.useState("Phổ biến nhất");
 
   const handleChange = (event) => {
-    setAge(event.target.value);
+    setSortBy(event.target.value);
   };
   return (
     <div className="CategoryFilter">
       <FormControl className={classes.formControl}>
         <Select
-          value={age}
+          value={sortBy}
           onChange={handleChange}
           className={classes.selectEmpty}
         >
@@ -48,7 +48,7 @@ const CategoryFilter = () => {
         </div>
       </div>
 
-      <ViewListIcon />
+      <ViewListIcon onClick={handleToggle} />
       <div style={{ display: "flex", alignItems: "center", fontSize: 12 }}>
         <FilterListIcon />
         <span>Bộ lọc</span>
