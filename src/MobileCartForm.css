@@ -1,7 +1,8 @@
 .MobileCartForm {
-  position: absolute;
-  bottom: -156px;
+  position: fixed;
+  bottom: 57px;
   left: 0;
+  z-index: 4;
 }
 .MobileCartForm__TextArea {
   background-color: rgb(236, 233, 233);

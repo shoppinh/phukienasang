@@ -1,0 +1,19 @@
+.CategoryFilter {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.CategoryFilter__Control {
+  padding-left: 2px;
+  display: flex;
+  flex-direction: column;
+}
+.CategoryFilter__Control svg {
+  font-size: 10px;
+}
+.CategoryFilter__PriceSort {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}

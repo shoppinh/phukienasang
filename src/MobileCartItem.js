@@ -17,25 +17,27 @@ const MobileCartItem = () => {
         <div className="MobileCartItem__Title">Ốp lưng king kong</div>
         <div className="MobileCartItem__Control">
           <div className="MobileCartItem__Price">250VND</div>
-          <AddIcon
-            style={{
-              fontSize: "1.2rem",
-              marginRight: "15px",
-              backgroundColor: "rgba(211, 217, 227)",
-              borderRadius: "25%",
-              padding: "3px",
-            }}
-          />
-          <div className="MobileCartItem__Quantity">5</div>
-          <RemoveIcon
-            style={{
-              fontSize: "1.2rem",
-              marginLeft: "15px",
-              backgroundColor: "rgba(211, 217, 227)",
-              borderRadius: "25%",
-              padding: "3px",
-            }}
-          />
+          <div className="MobileCartItem__Button">
+            <AddIcon
+              style={{
+                fontSize: "1.2rem",
+                marginRight: "15px",
+                backgroundColor: "rgba(211, 217, 227)",
+                borderRadius: "25%",
+                padding: "3px",
+              }}
+            />
+            <div className="MobileCartItem__Quantity">5</div>
+            <RemoveIcon
+              style={{
+                fontSize: "1.2rem",
+                marginLeft: "15px",
+                backgroundColor: "rgba(211, 217, 227)",
+                borderRadius: "25%",
+                padding: "3px",
+              }}
+            />
+          </div>
         </div>
         <div className="MobileCartItem__Description">
           1 ốp lưng iphone siêu xinh

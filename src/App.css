@@ -1,12 +1,19 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  height: 100%;
+  display: none;
 }
 @media only screen and (max-width: 600px) {
+  .App {
+    display: block;
+  }
   .container {
-    margin: 41px 0 219px 0;
+    margin-top: 41px;
     position: relative;
-    height: inherit;
+    max-height: calc(100vh - 263px);
+    overflow-y: scroll;
+  }
+  .MobileCartContainer {
+    padding-top: 15px;
   }
 }

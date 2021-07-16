@@ -2,23 +2,28 @@ import "./App.css";
 import BottomPanel from "./BottomPanel";
 import TopPanel from "./TopPanel";
 import Modal from "./Modal";
+import MobileCart from "./MobileCart";
+import Category from "./Category";
 import MobileNavBar from "./MobileNavBar";
-import MobileCartForm from "./MobileCartForm";
-import MobileCartItem from "./MobileCartItem";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <TopPanel />
-      <div className="container">
-        <MobileNavBar />
-        <div className="MobileCartContainer">
-          <MobileCartItem />
-          <MobileCartItem />
-        </div>
-        <MobileCartForm />
-      </div>
-      {/* <Modal /> */}
-      <BottomPanel />
+      <Switch>
+        <Route path="/cart">
+          <TopPanel />
+          <div className="container">
+            <MobileNavBar />
+            <MobileCart />
+          </div>
+          <BottomPanel />
+        </Route>
+        <Route path="/category">
+          <TopPanel />
+          <Category />
+          <BottomPanel />
+        </Route>
+      </Switch>
     </div>
   );
 }
