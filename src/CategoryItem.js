@@ -1,7 +1,7 @@
 import React from "react";
-import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 import "./CategoryItem.css";
 import Button from "@material-ui/core/Button";
+import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 
 const CategoryItem = () => {
   return (

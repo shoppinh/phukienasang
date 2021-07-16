@@ -10,6 +10,10 @@ h5 {
 }
 .CategoryGridItem__Title {
   text-align: start;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: rgb(173, 169, 169);
 }
 
 .CategoryGridItem__PriceAndShipping,
