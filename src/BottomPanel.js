@@ -10,10 +10,12 @@ import { Link } from "react-router-dom";
 const BottomPanel = () => {
   return (
     <div className="bottomPanel">
-      <div className="bottomPanel__items">
-        <AiFillHome className="bottomPanel__icons" style={{ color: "red" }} />
-        <span>Home</span>
-      </div>
+      <Link to="/">
+        <div className="bottomPanel__items">
+          <AiFillHome className="bottomPanel__icons" style={{ color: "red" }} />
+          <span>Home</span>
+        </div>
+      </Link>
       <Link to="/category">
         <div className="bottomPanel__items">
           <AiFillAppstore

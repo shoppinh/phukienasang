@@ -2,7 +2,6 @@ import React from "react";
 import CategoryItem from "./CategoryItem";
 import "./Category.css";
 import CategoryFilter from "./CategoryFilter";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import CategoryGridItem from "./CategoryGridItem";
 const Category = () => {
@@ -25,7 +24,6 @@ const Category = () => {
           <CategoryItem />
           <CategoryItem />
           <CategoryItem />
-          this is list view
         </div>
       ) : (
         <div className="Category__Container">

@@ -8,12 +8,11 @@
     display: block;
   }
   .container {
-    margin-top: 41px;
+    margin-top: 18px;
     position: relative;
     max-height: calc(100vh - 263px);
     overflow-y: scroll;
   }
   .MobileCartContainer {
-    padding-top: 15px;
   }
 }

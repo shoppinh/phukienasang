@@ -6,24 +6,27 @@ import MobileCart from "./MobileCart";
 import Category from "./Category";
 import MobileNavBar from "./MobileNavBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./Home";
 function App() {
   return (
     <div className="App">
+      <TopPanel />
+
       <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
         <Route path="/cart">
-          <TopPanel />
           <div className="container">
             <MobileNavBar />
             <MobileCart />
           </div>
-          <BottomPanel />
         </Route>
         <Route path="/category">
-          <TopPanel />
           <Category />
-          <BottomPanel />
         </Route>
       </Switch>
+      <BottomPanel />
     </div>
   );
 }
