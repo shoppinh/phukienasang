@@ -14,7 +14,7 @@ const CategoryGridItem = () => {
       <h5 className="CategoryGridItem__Title">Kính cường lực kingg kongg</h5>
       <div className="CategoryGridItem__PriceAndShipping">
         <span>203VND</span>
-        <span>COD</span>
+        <span style={{ color: "red" }}>COD</span>
       </div>
       <div className="CategoryGridItem__Control">
         <AddShoppingCartIcon style={{ fontSize: "2rem" }} />
